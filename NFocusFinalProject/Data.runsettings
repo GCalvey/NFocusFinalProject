@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+	<RunConfiguration>
+		<EnvironmentVariables>
+			<BaseUrl>https://www.edgewordstraining.co.uk/demo-site/my-account/</BaseUrl>
+			<username>George.calvey@nfocus.co.uk</username>
+			<password>TestCase123</password>
+			<First_Name>George</First_Name>
+			<Last_Name>Calvey</Last_Name>
+			<Email>George.calvey@nfocus.co.uk</Email>
+			<Phone_Number>02078218888</Phone_Number>
+			<Address>10 Downing St</Address>
+			<City>London</City>
+			<Postcode>SW1A 2AA</Postcode>
+		</EnvironmentVariables>
+	</RunConfiguration>
+</RunSettings>
