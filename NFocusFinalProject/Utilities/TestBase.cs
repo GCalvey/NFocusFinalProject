@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NFocusFinalProject.POMs;
+
 
 namespace NFocusFinalProject.TestBase
 {
@@ -35,16 +37,12 @@ namespace NFocusFinalProject.TestBase
             string BaseUrl = Environment.GetEnvironmentVariable("BaseUrl");
 
             driver.Url = BaseUrl;
-            
-        }
 
-        //Clears the basket after our first test//
-        [AfterScenario ("Coupon")]
+            // Dismisses the cookies banner at the bottom of the page//
 
-        public static void ClearBasket()
-        {
-            driver.FindElement(By.Id("menu-item-44")).Click();
-            driver.FindElement(By.CssSelector(".remove")).Click();
+            LogInPOM Login = new LogInPOM(driver);
+
+            Login.dismiss();
         }
 
         //Closes the browser once the tests have finished//

@@ -11,6 +11,7 @@
 			<Phone_Number>02078218888</Phone_Number>
 			<Address>10 Downing St</Address>
 			<City>London</City>
+            <Country>United Kingdom</Country>
 			<Postcode>SW1A 2AA</Postcode>
 		</EnvironmentVariables>
 	</RunConfiguration>

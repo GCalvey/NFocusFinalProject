@@ -26,7 +26,8 @@ namespace NFocusFinalProject.POMs
         public IWebElement Password => driver.FindElement(By.Id("password"));
 
         //Locates the login button//
-        public IWebElement Login => driver.FindElement(By.Id("login"));
+        public IWebElement LoginButton => driver.FindElement(By.CssSelector("button[name='login']"));
+
 
         //Clicks the Banner off//
         public void dismiss()
@@ -48,5 +49,11 @@ namespace NFocusFinalProject.POMs
             
             return this;
         }
+        //Clicks the login button//
+        public void Login ()
+        {
+            LoginButton.Click();
+        }
+
     }
 }
